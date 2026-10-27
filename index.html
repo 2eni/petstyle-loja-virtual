@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet&Style</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-white">
+    <!--NavBar-->
+    <header>
+        <div class="md:max-w-2xl">
+            <div class="sm:flex flex-row justify-start items-center font-bold bg-[#fc9704] lg:text-2xl gap-10 p-3 shadow-md">
+                <img href="#produtos" class="md:h-full md:w-48" src="imagens/logo.png" width="120" alt="logo">
+                <a href="#produtos" class="text-center text-white hover:text-[#9a8379]">Produtos</a>
+                <a href="#depoimentos" class="text-center text-white hover:text-[#9a8379]">Depoimentos</a>
+                <a href="#contato" class="text-center text-white hover:text-[#9a8379]">Contato</a> 
+                <input class="basis-sm rounded-sm bg-white p-2" type="search" placeholder="Procurar" aria-label="Search"/>
+            </div>
+        </div>
+    </header>
+    <!--produtos-->
+    <section id="produtos">
+        <h1 class="m-4 text-center font-bold text-2xl text-[#fc9704]">Produtos</h1>
+        <div class="grid grid-cols-4 gap-4 m-4 items-center">
+            <a href="...">
+                <div class="border border-orange-500 rounded-lg p-2 shadow-sm">
+                    <img src="imagens/racao.png" class="justify-self-center w-full" alt="ração">
+                    <div class="bg-[#fc9704] p-3 rounded text-white text-lg">
+                        <h3 class="font-bold text-left">Ração</h3>
+                        <p class="text-left">Compre rações com o melhor preço do mercado</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="...">
+                <div class="border border-orange-500 rounded-lg p-2 shadow-sm">
+                    <img src="imagens/acessorio.png" class="justify-self-center w-full" alt="ração">
+                    <div class="bg-[#fc9704] p-3 rounded text-white text-lg">
+                        <h3 class="font-bold text-left">Acessórios de transporte</h3>
+                        <p class="text-left">Compre Acessórios de transporte com o melhor preço do mercado</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="...">
+                <div class="border border-orange-500 rounded-lg p-2 shadow-sm">
+                    <img src="imagens/shampoo.png" class="justify-self-center w-full" alt="ração">
+                    <div class="bg-[#fc9704] p-3 rounded text-white text-lg">
+                        <h3 class="font-bold text-left">Higiene</h3>
+                        <p class="text-left">Compre produtos de higiene com o melhor preço do mercado</p>
+                    </div>
+                </div>
+            </a>
+
+            <a href="...">
+                <div class="border border-orange-500 rounded-lg p-2 shadow-sm">
+                    <img src="imagens/casas.png" class="justify-self-center w-full" alt="ração">
+                    <div class="bg-[#fc9704] p-3 rounded text-white text-lg">
+                        <h3 class="font-bold text-left">Casas</h3>
+                        <p class="text-left">Compre Casas de cachorro com o melhor preço do mercado</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+    </section>
+    <!--Depoimentos-->
+    <section id="depoimentos" class="bg-[#fc9704] p-3 shadow-md">
+         <div class="text-center p-3 text-white">
+                <p class="font-bold text-2xl">QUEM CONFIA NO NOSSO TRABALHO</p>
+                <p class="text-lg">O que dizem nossos clientes</p>
+        </div>
+        <div class="grid grid-cols-3 gap-12 ">
+            <div class="text-center bg-white rounded-lg shadow-sm p-3">
+                <h4 class="font-bold">Gabriela Elaine</h4>
+                <p class="text-yellow-500">★★★★★</p>
+                <p class="">"Super confiavel!"</p>
+            </div>
+
+            <div class="text-center bg-white rounded-lg shadow-sm p-3">
+                <h4 class="font-bold">Maria Luiza</h4>
+                <p class="text-yellow-500">★★★★★</p>
+                <p class="">"entrega muito rápida, chegou antes do prazo, recomendo muito!"</p>
+            </div>
+
+            <div class="text-center bg-white rounded-lg shadow-sm p-3">
+                <h4 class="font-bold">Maria Divina</h4>
+                <p class="text-yellow-500">★★★★★</p>
+                <p class="">"Produtos de qualidade e barato só se encontra aqui😍"</p>
+            </div>
+        </div> 
+    </section>
+
+    <!--Contato-->
+    <section id="contato">
+        <h1 class="m-4 text-center font-bold text-2xl text-[#fc9704]">Contato</h1>
+        <div>
+            <form class="flex flex-wrap justify-center items-center gap-4 pb-5">
+                <label class="font-bold text-[#fc9704]" for="nome">Nome: </label>
+                <input class="p-2 rounded border border-[#fc9704]" type="text" id="nome" required>
+
+                <label class="font-bold text-[#fc9704]" for="email">Email: </label>
+                <input class="p-2 rounded border border-[#fc9704]" type="email" id="email" placeholder="XXXXXXXX@XXXX.XXX">
+
+                <label class="font-bold text-[#fc9704]" for="menssagem">Menssagem:</label>
+                <textarea class="p-2 rounded border border-[#fc9704]" rows="5" cols="auto" id="menssagem"></textarea>
+
+                <button class="border border-orange-500 px-5 py-1 rounded-sm text-[#fc9704] hover:bg-[#fc9704] hover:text-white" type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    <!--Rodapé-->
+    <footer>
+        <div class="bg-[#fc9704]">
+            <p class="text-center text-white p-10">© 2026 por 2nCompany.  Todos os direitos reservados. Nenhuma reprodução sem autorização.</p>
+        </div>
+    </footer>
+</body> 
+</html>
